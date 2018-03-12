@@ -3,7 +3,7 @@ disqus:
   comments: true
   disqus_shortname: 'jonghyunho'
 
-google-ID: 'UA-112060364-1'
+google-ID: 'UA-115470725-1'
 
 menu:
 - {name: 'About', path: 'menu', url: 'about.html'}

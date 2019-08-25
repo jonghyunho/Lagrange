@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Noto+Serif+KR:400,700');
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 /*
   Contents:
     Base

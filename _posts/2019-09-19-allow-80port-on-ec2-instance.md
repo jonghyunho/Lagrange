@@ -6,8 +6,6 @@ categories: AWS
 tags: [aws]
 ---
 
-# Allowing 80 port on EC2 instance
-
 Even if 80 port is configured to be open for Inbound, it's not able to access from outside.
 
 It can be done by changing IP table with following command.

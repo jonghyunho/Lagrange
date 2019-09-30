@@ -70,6 +70,7 @@ a:hover {
 
 img {
   max-width: 100%;
+  max-height: 600;
   height: auto;
   border-radius: 5px;
 }

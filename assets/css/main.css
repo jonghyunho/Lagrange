@@ -281,7 +281,7 @@ hr {
 
 code,
 pre {
-  font-family: "Source Code Pro", monospace;
+  font-family: font-family: "Roboto", "Noto Sans KR", sans-serif; /*"Source Code Pro", monospace;*/
 }
 code {
   padding: .25em .5em;

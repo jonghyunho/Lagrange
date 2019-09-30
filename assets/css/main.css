@@ -27,7 +27,8 @@
 
 body {
   /*font-family: "PT Serif", Georgia, Malgun Gothic, "Times New Roman", serif;*/
-  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  /*font-family: "Roboto", "Noto Sans KR", sans-serif;*/
+  font-family: "Roboto Slab", "Noto Serif KR", serif;
   font-size: 18px;
   color: #515151;
   line-height: 1.75rem;
@@ -281,7 +282,7 @@ hr {
 
 code,
 pre {
-  font-family: font-family: "Roboto", "Noto Sans KR", sans-serif; /*"Source Code Pro", monospace;*/
+  font-family: "Roboto Slab", "Noto Serif KR", serif; /*"Source Code Pro", monospace;*/
 }
 code {
   padding: .25em .5em;

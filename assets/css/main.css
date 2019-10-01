@@ -285,7 +285,6 @@ hr {
 code,
 pre {
   font-family: "Roboto Slab", "Noto Serif KR", serif; /*"Source Code Pro", monospace;*/
-  font-size: 18px;
   /*font-size: .8rem;*/
 }
 code {
@@ -299,7 +298,8 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  font-size: .8rem;
+  font-size: 18px;
+  /*font-size: .8rem;*/
   line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;

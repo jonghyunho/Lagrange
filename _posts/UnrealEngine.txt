@@ -1,5 +1,12 @@
 @startuml
 
+UObject <|-- UGameInstance
+FExec <|-- UGameInstance
+
+UGameInstance *-- ULocalPlayer
+UGameInstance *-- UOnlineSession
+UGameInstance *-- UObject
+
 UObject <|-- AActor
 
 AActor <|-- APawn
@@ -10,6 +17,26 @@ AActor <|-- AController
 INavAgentInterface <|-- AController 
 AController <|-- APlayerController
 
+AActor <|-- AInfo
+AInfo *-- UBillboardComponent
+AInfo <|-- AGameModeBase
+AGameModeBase *-- AGameSession
+AGameModeBase *-- AGameStateBase
+AGameModeBase *-- APlayerController
+AGameModeBase *-- APlayerState
+AGameModeBase *-- AHUD
+AGameModeBase *-- APawn
+AGameModeBase *-- ASpectatorPawn
+'AGameModeBase *-- AServerStatReplicator
+
+AActor <|-- AHUD
+AHUD *-- UCanvas
+
+UCanvas *-- FPlane
+UCanvas *-- UTexture2D
+
+FVector <|-- FPlane
+
 UObject <|-- UWorld
 FNetworkNotify <|-- UWorld
 
@@ -17,7 +44,14 @@ UEngine <|-- UEditorEngine
 UEditorEngine <|-- UUnrealEdEngine
 FNotifyHook <|-- UUnrealEdEngine
 
-
+UUnrealEdEngine *-- UUnrealEdOptions
+'UUnrealEdEngine *-- UAutoReimportManager
+'UUnrealEdEngine *-- UMaterial
+'UUnrealEdEngine *-- USoundCue
+'UUnrealEdEngine *-- UAnimCompress
+UUnrealEdEngine *-- FComponentVisualizerManager
+'UUnrealEdEngine *-- FCachedComponentVisualizer
+UUnrealEdEngine *-- FPerformanceMonitor
 
 FActorTickFunction *-- AActor
 FTickFunction <|-- FActorTickFunction
@@ -26,11 +60,29 @@ FTickFunction <|-- FActorComponentTickFunction
 FBaseGraphTask <|-- TGraphTask
 
 FTickTaskManagerInterface <|-- FTickTaskManager
+FTickTaskManager *-- FTickTaskSequencer
+FTickTaskManager *-- FTickTaskLevel
+FTickTaskManager *-- FTickContext
+FTickTaskManager *-- FTickFunction
+
+UWorld --> FTickTaskManagerInterface 
+
+UObject <|-- UAnimInstance
+UAnimInstance *-- USkeleton
+
+FExec <|-- FSelfRegisteringExec
+FSelfRegisteringExec <|-- FModuleManager
+
+FRunnable <|-- FTaskThreadBase
+FSingleThreadRunnable <|-- FTaskThreadBase
+FTaskThreadBase <|-- FNamedTaskThread
 
 IRHICommandContext <|-- IRHIComputeContext
 IRHICommandContext <|-- IRHICommandContextPSOFallback
 
 class FModuleManager {
 }
+
+FEngineLoop --> UEngine
 
 @enduml

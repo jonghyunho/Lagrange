@@ -4,12 +4,12 @@ title: "Internals"
 author: "Jonghyun Ho"
 categories: internals
 tags: [internals]
+image: unrealengine.png
 ---
 
-Refer to this link [plantuml on github] how to use plantuml on github.
+Refer to [Unreal Engine Architecture] and [Unreal Engine Document] for further information.
 
-![cached image](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/plantuml/plantuml-server/master/src/main/webapp/resource/test2diagrams.txt)
+![Unreal Engine](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/jonghyunho/jonghyunho.github.io/master/_posts/UnrealEngine.txt)
 
-![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/plantuml/plantuml-server/master/src/main/webapp/resource/test2diagrams.txt)
-
-[plantuml on github]: https://blog.anoff.io/2018-07-31-diagrams-with-plantuml/
+[Unreal Engine Architecture]: https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/index.html
+[Unreal Engine Document]: https://docs.unrealengine.com/en-US/index.html

@@ -1,0 +1,36 @@
+@startuml
+
+UObject <|-- AActor
+
+AActor <|-- APawn
+INavAgentInterface <|-- APawn
+APawn <|-- ACharacter
+
+AActor <|-- AController 
+INavAgentInterface <|-- AController 
+AController <|-- APlayerController
+
+UObject <|-- UWorld
+FNetworkNotify <|-- UWorld
+
+UEngine <|-- UEditorEngine
+UEditorEngine <|-- UUnrealEdEngine
+FNotifyHook <|-- UUnrealEdEngine
+
+
+
+FActorTickFunction *-- AActor
+FTickFunction <|-- FActorTickFunction
+FTickFunction <|-- FActorComponentTickFunction
+
+FBaseGraphTask <|-- TGraphTask
+
+FTickTaskManagerInterface <|-- FTickTaskManager
+
+IRHICommandContext <|-- IRHIComputeContext
+IRHICommandContext <|-- IRHICommandContextPSOFallback
+
+class FModuleManager {
+}
+
+@enduml

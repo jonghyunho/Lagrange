@@ -5,6 +5,8 @@ disqus:
 
 google-ID: 'UA-115470725-1'
 
+root-url: 'https://raw.githubusercontent.com/jonghyunho/jonghyunho.github.io/master'
+
 menu:
 - {name: 'About', path: 'menu', url: 'about.html'}
 - {name: 'Writing', path: 'menu', url: 'writing.html'}

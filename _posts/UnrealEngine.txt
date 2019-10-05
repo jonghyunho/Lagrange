@@ -58,57 +58,57 @@ UUnrealEdEngine *-- UUnrealEdOptions
 'UUnrealEdEngine *-- FCachedComponentVisualizer
 UUnrealEdEngine *-- FPerformanceMonitor
 
-FActorTickFunction *-- AActor
-FTickFunction <|-- FActorTickFunction
-FTickFunction <|-- FActorComponentTickFunction
+'FActorTickFunction *-- AActor
+'FTickFunction <|-- FActorTickFunction
+'FTickFunction <|-- FActorComponentTickFunction
 
-FBaseGraphTask <|-- TGraphTask
+'FBaseGraphTask <|-- TGraphTask
 
-FTickTaskManagerInterface <|-- FTickTaskManager
-FTickTaskManager *-- FTickTaskSequencer
-FTickTaskManager *-- FTickTaskLevel
-FTickTaskManager *-- FTickContext
-FTickTaskManager *-- FTickFunction
+'FTickTaskManagerInterface <|-- FTickTaskManager
+'FTickTaskManager *-- FTickTaskSequencer
+'FTickTaskManager *-- FTickTaskLevel
+'FTickTaskManager *-- FTickContext
+'FTickTaskManager *-- FTickFunction
 
 UEditorEngine --> UWorld
-UWorld --> FTickTaskManagerInterface 
+'UWorld --> FTickTaskManagerInterface 
 
 UObject <|-- UAnimInstance
 UAnimInstance *-- USkeleton
 
-FExec <|-- FSelfRegisteringExec
-FSelfRegisteringExec <|-- FModuleManager
+'FExec <|-- FSelfRegisteringExec
+'FSelfRegisteringExec <|-- FModuleManager
 
-FRunnable <|-- FTaskThreadBase
-FSingleThreadRunnable <|-- FTaskThreadBase
-FTaskThreadBase <|-- FNamedTaskThread
+'FRunnable <|-- FTaskThreadBase
+'FSingleThreadRunnable <|-- FTaskThreadBase
+'FTaskThreadBase <|-- FNamedTaskThread
 
-IRHICommandContext <|-- IRHIComputeContext
-IRHICommandContext <|-- IRHICommandContextPSOFallback
+'IRHICommandContext <|-- IRHIComputeContext
+'IRHICommandContext <|-- IRHICommandContextPSOFallback
 
-class FModuleManager {
-}
+'class FModuleManager {
+'}
 
-FEngineLoop --> UEngine
+'FEngineLoop --> UEngine
 
-UEngine <|-- UGameEngine
+'UEngine <|-- UGameEngine
 
-FRenderThreadScope *-- RenderCommandFunction
-FRenderThreadScope --> FRHICommandListImmediate
+'FRenderThreadScope *-- RenderCommandFunction
+'FRenderThreadScope --> FRHICommandListImmediate
 
-class FCanvasBaseRenderItem {
-  Render_RenderThread()
-  Render_GameThread()
-}
+'class FCanvasBaseRenderItem {
+'  Render_RenderThread()
+'  Render_GameThread()
+'}
 
-FCanvasBaseRenderItem <|-- FMeshMaterialRenderItem 
+'FCanvasBaseRenderItem <|-- FMeshMaterialRenderItem 
 'FCanvasBaseRenderItem <|-- FCanvasBatchedElementRenderItem
-FCanvasBaseRenderItem <|-- FCanvasTileRenderItem
+'FCanvasBaseRenderItem <|-- FCanvasTileRenderItem
 'FCanvasBaseRenderItem <|-- FCanvasTriangleRendererItem
 
-FMeshMaterialRenderItem --> FRenderThreadScope
+'FMeshMaterialRenderItem --> FRenderThreadScope
 'FMeshMaterialRenderItem2 --> FRenderThreadScope
-FCanvasTileRenderItem --> FRenderThreadScope
-FCanvasTriangleRenderItem --> FRenderThreadScope
-FCanvas --> FRenderThreadScope
+'FCanvasTileRenderItem --> FRenderThreadScope
+'FCanvasTriangleRenderItem --> FRenderThreadScope
+'FCanvas --> FRenderThreadScope
 @enduml

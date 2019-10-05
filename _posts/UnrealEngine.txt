@@ -3,8 +3,8 @@
 UObject <|-- UGameInstance
 FExec <|-- UGameInstance
 
-UGameInstance *-- ULocalPlayer
-UGameInstance *-- UOnlineSession
+'UGameInstance *-- ULocalPlayer
+'UGameInstance *-- UOnlineSession
 UGameInstance *-- UObject
 
 UObject <|-- AActor
@@ -21,7 +21,7 @@ AActor <|-- AInfo
 'AInfo *-- UBillboardComponent
 AInfo <|-- AGameModeBase
 AGameModeBase *-- AGameSession
-AGameModeBase *-- AGameStateBase
+'AGameModeBase *-- AGameStateBase
 AGameModeBase *-- APlayerController
 AGameModeBase *-- APlayerState
 AGameModeBase *-- AHUD
@@ -30,18 +30,18 @@ AGameModeBase *-- APawn
 'AGameModeBase *-- AServerStatReplicator
 
 AActor <|-- AHUD
-AHUD *-- UCanvas
+'AHUD *-- UCanvas
 
-UCanvas *-- FPlane
-UCanvas *-- UTexture2D
+'UCanvas *-- FPlane
+'UCanvas *-- UTexture2D
 
-FVector <|-- FPlane
+'FVector <|-- FPlane
 
 UObject <|-- UWorld
 'FNetworkNotify <|-- UWorld
 
 UEngine <|-- UEditorEngine
-UEditorEngine <|-- UUnrealEdEngine
+'UEditorEngine <|-- UUnrealEdEngine
 'FNotifyHook <|-- UUnrealEdEngine
 
 UEngine *-- FWorldContext
@@ -49,14 +49,14 @@ UEngine *-- FWorldContext
 FWorldContext *-- UGameViewportClient
 FWorldContext *-- UGameInstance
 
-UUnrealEdEngine *-- UUnrealEdOptions
+'UUnrealEdEngine *-- UUnrealEdOptions
 'UUnrealEdEngine *-- UAutoReimportManager
 'UUnrealEdEngine *-- UMaterial
 'UUnrealEdEngine *-- USoundCue
 'UUnrealEdEngine *-- UAnimCompress
 'UUnrealEdEngine *-- FComponentVisualizerManager
 'UUnrealEdEngine *-- FCachedComponentVisualizer
-UUnrealEdEngine *-- FPerformanceMonitor
+'UUnrealEdEngine *-- FPerformanceMonitor
 
 'FActorTickFunction *-- AActor
 'FTickFunction <|-- FActorTickFunction

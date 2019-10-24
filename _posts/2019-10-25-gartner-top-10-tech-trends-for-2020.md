@@ -4,9 +4,17 @@ title: "[번역] 가트너 톱 10 기술 트렌드 2020"
 author: "Jonghyun Ho"
 categories: trend
 tags: [gartner, tech, trend]
-image: gartner.jpg
+image: gartner.png
 ---
-# Hyperautomation, blockchain, AI security, distributed cloud and autonomous things 등의 분야는 올해의 주요한 기술 트렌드로 새로운 기회를 만들어내고 있다.
+
+
+
+- 개인적으로 번역한 내용으로 언제든지 게시글이 삭제될 수 있습니다.
+- 개인적으로 번역한 내용으로 오역이 있을 수 있습니다. 하단의 링크의 원문을 참조하세요.
+
+
+
+## Hyperautomation, blockchain, AI security, distributed cloud and autonomous things 등의 분야는 올해의 주요한 기술 트렌드로 새로운 기회를 만들어내고 있다.
 
 인간 능력의 증대(Human augmentation)는 미래의 사이보그를 연상시킨다. 하지만 이미 인간은 수백만년동안 몸의 일부들의 능력을 늘려왔다. 안경, 보청기, 인공 기관 등은 몸에 이식하거나 자연스럽게 착용할 수 있는 형태 등으로 발전되어 왔다. 심지어 시력 교정 수술 또한 매우 보편적이 되었다.
 
@@ -26,6 +34,7 @@ image: gartner.jpg
 
 ![Top_10_Technology_Trends_Infographic_2020](/assets/img/Top_10_Technology_Trends_Infographic_2020.png)
 
+
 ## 트렌드 1. 고도화된 자동화(Hyperautomation)
 
 자동화는 인간의 도움을 필요로 하는 작업을 자동적으로 동작하도록 하는 기술이다.
@@ -39,6 +48,7 @@ image: gartner.jpg
 
 주요 목표는 아닐지라도, 고도화된 자동화는 조직의 [디지털 트윈](https://www.gartner.com/smarterwithgartner/how-digital-twins-simplify-the-iot) (digital twin of the organization, DTO) 형태로 나타나기도 한다. 이는 기능과 절차, 주요 성능 지표들을 시각화 하고, 가치를 높이기 위해 상호 작용할 수 있다. 조직의 디지털 트윈은 고도화된 자동화, 실시간성 제공, 조직의 지속적인 지능화, 비즈니스 기회 포착 등을 통합하는 과정의 일부가 될 것이다.
 
+
 ## 트렌드 2. 다중 경험(Multiexperience)
 
 다중 경험은 '기술 지향적인 사람'을 '사람 지향적인 기술'로 대체하고자 한다. 이러한 트렌드로 인해 컴퓨터의 사용 방법에 크게 변화가 이루어질 수 있다. 단 하나의 인터랙션에서 웨어러블과 진보된 컴퓨터 센서와 같이 다중 센서와 다중 접점을 사용하는 개념으로 변화될 것이다.
@@ -47,11 +57,13 @@ image: gartner.jpg
 
 미래에는 이러한 트렌드는 이른바 '자연스러운 경험 (ambient experience)' 라고 불리게 될 것이다. 하지만 현재 다중경험은 AR, VR, MR, 다중 채널 인간-기계 인터페이스, 센싱 기술 등 실감나는 경험에만 집중되어 있다. 이러한 기술들의 조합은 AR 오버레이나, 완벽한 실감형 VR 경험을 위해 사용될 수 있다.
 
+
 ## 트렌드 3. 민주화(Democratization)
 
 기술의 민주화는 이러한 것들을 의미한다. 사람들에게 기술이나 비즈니스 전문성을 엄청난 비용을 투자하여 훈련시키지 않더라도 손쉽게 접근할 수 있는 방법을 제공하는 것이다. 이는 4가지 핵심 키 영역에 초점을 맞출 수 있다. - 애플리케이션 개발, 데이터, 분석, 디자인과 지식 - 이는 종종 "시민의 접근 기회(citizen access)" 라고도 불린다. 이는 시민 데이터 과학자, 시민 프로그래머 등을 만들어 낼 수도 있다.
 
 예를 들면, 민주화는 개발자가 데이터 모델을 만들어 낼 수 있도록 유도할 수 있다. 데이터 과학자의 스킬이 없더라도 말이다. 그들은 대신에 코드를 만들어 내고 자동화된 테스트를 하는데 있어서 인공지능 주도 개발에 의존하게 될 지도 모른다.
+
 
 ## 트렌드 4. 인간 능력의 증대(Human augmentation)
 
@@ -64,6 +76,7 @@ AI 와 ML 은 인간 대신에 의사 결정을 하는데 점차 많이 사용�
 
 인지적 증강은 인간의 능력이 좀 더 생각하게 하고, 더 나은 결정을 할 수 있도록 향상시킬 수 있다. 예를 들면, 정보와 애플리케이션을 활용하여 새로운 배움과 경험을 쌓을 수 있다. 인지적 증강은 또한 뇌 증강 분야의 몇몇 기술들을 포함한다. 그 기술들은 인지적 추론을 처리하기 위해 물리적인 주입을 하기도 한다.
 
+
 ## 트렌드 5. 투명성(Transparency) 과 추적 가능성(traceability)
 
 기술의 혁명은 신뢰의 위기를 만들기도 한다. 소비자가 [데이터](https://www.gartner.com/smarterwithgartner/how-to-balance-personalization-with-data-privacy)가 어떻게 수집되고 사용되는지에 대해 점차 많이 알게 됨에 따라, 조직은 데이터를 저장하고 모으는 데 있어 단점이 증가하고 있다는 것을 알게 된다.
@@ -73,6 +86,7 @@ AI 와 ML 은 인간 대신에 의사 결정을 하는데 점차 많이 사용�
 
 European Union’s General Data Protection Regulation(GDPR) 과 같은 법률이 전 세계에 걸쳐 제정되고 있다. 혁신을 만들기 위해, 그리고 조직의 규칙을 정의하기 위해.
 
+
 ## 트렌드 6. 강화된 엣지 컴퓨팅(The empowered edge)
 
 [엣지 컴퓨팅](https://www.gartner.com/en/information-technology/glossary/edge-computing)은 정보 처리와 컨텐트 수집, 배포가 데이터 소스의 근처에 위치하게 되는 위상 형태를 말한다. 이러한 아이디어는 트래픽을 로컬화 해주고, 분산화에 수반되는 지연을 줄여주는 역할을 한다. 이는 모든 [사물 인터넷(IoT)](https://www.gartner.com/smarterwithgartner/lessons-from-iot-early-adopters) 기술에도 포함되는 이야기이다. 강화된 엣지는 어떻게 디바이스들이 증가되고, 스마트 공간의 기반을 만들고, 핵심 애플리케이션과 서비스를 사용하는 사람이나 기계에게 더 더 가까이 두려고 한다. 
@@ -81,11 +95,13 @@ European Union’s General Data Protection Regulation(GDPR) 과 같은 법률이
 
 2023년까지, 기존 IT 환경 기기의 갯수보다 20 배 이상으로 더 많아질 수 있다. 
 
+
 ## 트렌드 7. 분산화된 클라우드(Distributed cloud)
 
 분산화된 클라우드(Distributed cloud) 는 공공의 클라우드 서비스가 클라우드 사업자의 물리 [데이터 센터](https://www.gartner.com/smarterwithgartner/the-data-center-is-almost-dead) 외부의 영역으로 분산되는 것을 의미한다. 그러나 여전히 클라우드 사업자에 의해 제어될 수 있다. 분산화된 클라우드에서는 클라우드 사업자가 클라우드 서비스 아키텍처, 배포, 운영, 관리, 수정 등 모든 영역에 있어서 책임이 있다. 중앙화된 클라우드에서 분산화된 클라우드로의 변화는 [클라우드 컴퓨팅](https://www.gartner.com/smarterwithgartner/6-steps-for-planning-a-cloud-strategy) 에서의 새로운 변화라고 할 수 있다.
 
 분산화된 클라우드는 데이터 센터가 어디에든 위치할 수 있도록 한다. 이는 지연과 같은 기술적 이슈와 데이터의 소유권과 같은 규제에 대한 문제도 함께 해결할 수 있다. 이는 폐쇄적이고 지역적인 클라우드의 장점과 함께 개방적인 클라우드 서비스에 대한 장점을 모두 제공할 수 있다.
+
 
 ## 트렌드 8. 자동화된 사물(Autonomous things)
 
@@ -99,14 +115,14 @@ European Union’s General Data Protection Regulation(GDPR) 과 같은 법률이
 
 더 읽기: [Human Beings, AI and Robotics Represent the New Workforce in 2028](https://www.gartner.com/smarterwithgartner/human-beings-ai-and-robots-to-represent-the-new-workforce-in-2028)
 
+
 ## 트렌드 9. 실질적인 블록체인(Practical blockchain)
 
 [블록체인](https://blogs.gartner.com/smarterwithgartner/the-cios-guide-to-blockchain/)은 분산화된 원장의 한 유형으로, 모든 참가자가 공유하는 암호로 서명되고 되돌릴 수 없는 거래 기록의 시간순으로 정렬된 목록이다.
 
 블록체인은 또한 참여자들이 어떠한 자산의 시작점을 추적할 수 있도록 한다. 이는 전통적인 자산일 경우에 효과적이다. 뿐만 아니라 음식으로 인해 발생한 병의 경우 초기 공급자를 추적하는 등의 다른 길을 만들기도 한다. 또한 이런 것도 가능하다. 둘 혹은 그 이상의 참여자들이 서로 알지 못하지만 안전하게 디지털 환경에서 상호 교류하고, 가치를 교환할 수 있다. 중앙화된 관리, 규제 등이 없이도 말이다.
- It also allows two or more parties who don’t know each other to safely interact in a digital environment and exchange value without the need for a centralized authority. 
 
-완전한 블록체인 모델은 5가지 요소들을 포함한다: 공유되고 분산화된 원장. 수정 불가능하고, 추적 가능한 원장, 보안, 토큰화, 분산된 공공 합의 매커니즘. 그러나 블록체인은 엔터프라이즈 배포 등에는 미숙한 채 남아 있다. 낮은 확장성과 상호 운용성을 나타내는 기술적인 이슈로 인하여.
+완전한 블록체인 모델은 5가지 요소들을 포함한다: 공유되고 분산화된 원장, 수정 불가능하고 추적 가능한 원장, 보안, 토큰화, 분산된 공공 합의 매커니즘. 그러나 블록체인은 엔터프라이즈 배포 등에는 미숙한 채 남아 있다. 낮은 확장성과 상호 운용성을 나타내는 기술적인 이슈로 인하여.
 
 > Blockchain, which is already appearing in experimental and small-scope projects, will be fully scalable by 2023
 
@@ -118,14 +134,16 @@ European Union’s General Data Protection Regulation(GDPR) 과 같은 법률이
 
 블록체인, 그것은 이미 실험적으로 등장하고 있고 작은 프로젝트로 시작되었지만 2023년까지 크게 확장될 수 있을 것이다.
 
+
 ## 트렌드 10. 인공지능 보안(AI security)
 
 고도화된 자동화(hyperautomation)와 자동화된 사물(autonomous things) 와 같이 점차 발전하는 기술은 비즈니스 세계에 새로운 기회를 제공한다. 하지만 이들이 잠재적인 공격에 대해 보안에 대한 [위협을 증가](https://blogs.gartner.com/smarterwithgartner/gartner-top-7-security-and-risk-trends-for-2019/) 시키기도 한다. 보안 팀은 이러한 공격에 대해 준비할 수 있어야 하고, 어떻게 인공지능이 보안의 영역에 영향을 끼칠 수 있는지 인지하고 있어야 한다.
 
 인공지능 보안은 다음과 같은 3가지 관점을 가지고 있다:
 1. AI 기반의 시스템 보안: Securing AI 트레이닝 데이터, 파이프라인, ML 모델 등을 보안.
-2. AI 를 활용한 보안 향상: 머신러닝을 이용하여 패턴을 이해할 수 있고, 침입 발견, 사이버 보안을 자동화 할 수 있다. 
+2. AI 를 활용한 보안 향상: 머신러닝을 이용하여 패턴을 이해할 수 있고, 침입 발견, 사이버 보안을 자동화 할 수 있다.
 3. 공격자의 AI 비도덕적 사용에 대한 예측: 침입을 탐지하고, 그에 대항할 수 있도록 함.
+
 
 ## 참조
 

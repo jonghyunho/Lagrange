@@ -85,7 +85,8 @@ blockquote {
 }
 
 hr {
-  border-top: 1px solid #ccc;
+  margin-top:10;
+  border-top: 1px solid #eee;
 }
 
 /*

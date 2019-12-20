@@ -146,6 +146,7 @@ hr {
   /*overflow: hidden;*/
   border-radius: 5px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .thumbnail-container img{

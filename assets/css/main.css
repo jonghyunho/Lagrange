@@ -152,21 +152,7 @@ hr {
 #thumbnail-image {
   width: auto;
   height: auto;
-  max-height: 360;
-}
-
-.thumbnail-container img{
-  height: auto;
-  max-width: auto;
-  max-height: 360;
-  border-radius: 5px;
-/*
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0%;
-  margin-bottom: 0%;
-*/
+  max-height: 360px;
 }
 
 /*

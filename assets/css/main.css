@@ -142,7 +142,7 @@ hr {
 
 .thumbnail-container {
   max-width: 100%;
-  max-height: 360;
+  max-height: 360px;
   /*overflow: hidden;*/
   border-radius: 5px;
   margin-bottom: 25px;

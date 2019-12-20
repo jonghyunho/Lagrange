@@ -149,15 +149,16 @@ hr {
   text-align: center;
 }
 
-.thumbnail-image {
+#thumbnail-image {
   width: auto;
-  height: 360px;
+  height: auto;
+  max-height: 360;
 }
 
 .thumbnail-container img{
+  height: auto;
   max-width: auto;
   max-height: 360;
-  height: auto;
   border-radius: 5px;
 /*
   display: block;

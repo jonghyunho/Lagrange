@@ -11,5 +11,4 @@ image: choosing-right-estimator.png
 
 scikit-learn.org 에 명시되어 있는 내용이지만 자주 찾아보고 실험해보기 위해 메모해둔다.
 
-[Choosing the right estimator](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
-![scikit-learn algorithm cheat sheet](/assets/img/choosing-right-estimator.png)
+- 참조: [Choosing the right estimator](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)

@@ -154,15 +154,19 @@ hr {
   height: 360px;
 }
 
-/*
 .thumbnail-container img{
+  max-width: auto;
+  max-height: 360;
+  height: auto;
+  border-radius: 5px;
+/*
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0%;
   margin-bottom: 0%;
-}
 */
+}
 
 /*
   Post

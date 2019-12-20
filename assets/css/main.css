@@ -145,7 +145,8 @@ hr {
   max-height: 600;
   /*overflow: hidden;*/
   border-radius: 5px;
-  margin-bottom: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 

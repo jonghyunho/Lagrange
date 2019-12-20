@@ -170,6 +170,13 @@ hr {
   list-style: none;
 }
 
+.blank {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0px;
+  list-style: none;
+}
+
 .post-date {
   display: block;
   margin-top:3px;

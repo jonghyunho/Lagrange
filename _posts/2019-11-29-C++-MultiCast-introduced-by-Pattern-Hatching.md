@@ -3,7 +3,7 @@ layout: post
 title: "C++ MultiCast introduced by Pattern Hatching"
 author: "Jonghyun Ho"
 categories: Design Pattern
-tags: [UE4]
+tags: [Design Pattern]
 image: pattern_hatching.jpg
 ---
 

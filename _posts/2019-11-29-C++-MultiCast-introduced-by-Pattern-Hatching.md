@@ -17,7 +17,7 @@ MultiCast는 데이터를 전송할 때 하나의 노드가 여러 노드에 동
 저자는 다음과 같은 상황에 MultiCast 를 쓸 것을 권장하고 있다.
 ```
 - 특정 객체의 클래스가 다른 객체로부터 정보를 받는 데 관심이 있을 수 있다.
-- 정보는 임의의 구조와 복잡도를 가지며 소프트웨어가 발점함에 따라 달라질 수 있다.
+- 정보는 임의의 구조와 복잡도를 가지며 소프트웨어가 발전함에 따라 달라질 수 있다.
 - 정보 교환은 정적으로 타입 안전성이 좋아야 한다.
 ```
 
@@ -44,7 +44,9 @@ class TEvent {
 
   typedef std::list<Handler*> HandlerList;
 
-  static void Register(Handler* handler) { registry_.push_back(handler); }
+  static void Register(Handler* handler) {
+    registry_.push_back(handler);
+  }
 
   static void Unregister(Handler* handler) {
     typename std::list<Handler*>::iterator it;
@@ -95,10 +97,12 @@ class CoinChanger : public CoinReleaseEvent::Handler,
   string name_;
 };
 
-TEvent<CoinInsertedEvent>::HandlerList TEvent<CoinInsertedEvent>::registry_;
-TEvent<CoinReleaseEvent>::HandlerList TEvent<CoinReleaseEvent>::registry_;
+TEvent<CoinInsertedEvent>::HandlerList
+       TEvent<CoinInsertedEvent>::registry_;
+TEvent<CoinReleaseEvent>::HandlerList
+       TEvent<CoinReleaseEvent>::registry_;
 TEvent<ProductDispensedEvent>::HandlerList
-    TEvent<ProductDispensedEvent>::registry_;
+       TEvent<ProductDispensedEvent>::registry_;
 
 int main() {
   CoinChanger coinChanger("coin changer 1");

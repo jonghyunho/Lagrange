@@ -12,7 +12,7 @@ image: stock-chart.jpg
 $ pip install yfinance
 ```
 
-## yfinace 모듈 임포트하여 주식 데이터 읽기
+## yfinance 모듈 임포트하여 주식 데이터 읽기
 
 ``` python
 >>> import yfinance as yf

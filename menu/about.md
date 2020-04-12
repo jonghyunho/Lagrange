@@ -233,7 +233,7 @@ function move() {
 		return;
 	}
 	
-	var shift_x = -45;
+	var shift_x = -40;
 	var shift_y = 10;
 	var cur_point_x = points[i][0] + shift_x;
 	var cur_point_y = points[i][1] + shift_y;

@@ -8,7 +8,7 @@ layout: page
 <div id='blank' style='height:10px;'></div>
 
 <div id='container'>
-<svg style='width:100%;height:400px;border:0px'>
+<svg style='width:347px;height:350px;border:1px'>
 	<g></g>
 </svg>
 </div>
@@ -123,22 +123,29 @@ var points = [
 	[106, 180],
 	[110, 193],
 	[115, 206],
+	[116, 209],
 
 	[-1, -1],
+
 	[138, 135],
 	[142, 138],
 	[141, 143],
+	[138, 135],
 	
 	[-1, -1],
+
 	[328, 209],
 	[333, 191],
 	
 	[-1, -1],
+
 	[319, 219],
 	[325, 220],
 	[323, 226],
+	[319, 219],
 	
 	[-1, -1],
+
 	[172, 172],
 	[180, 174],
 	[185, 178],
@@ -154,13 +161,17 @@ var points = [
 	[155, 182],
 	[147, 180],
 	[149, 178],
+	[172, 172],
 	
 	[-1, -1],
+
 	[181, 176],
 	[184, 180],
 	[178, 183],
+	[181, 176],
 	
 	[-1, -1],
+
 	[249, 174],
 	[255, 172],
 	[274, 174],
@@ -176,18 +187,24 @@ var points = [
 	[247, 184],
 	[243, 186],
 	[242, 184],
+	[249, 174],
 	
 	[-1, -1],
+
 	[266, 175],
 	[265, 182],
 	[269, 177],
-	
+	[266, 175],
+
 	[-1, -1],
+
 	[200, 236],
 	[205, 239],
 	[197, 241],
+	[200, 236],
 	
 	[-1, -1],
+
 	[219, 243],
 	[228, 235],
 	[233, 236],
@@ -195,8 +212,10 @@ var points = [
 	[243, 234],
 	[230, 240],
 	[226, 243],
+	[219, 243],
 	
 	[-1, -1],
+
 	[182, 267],
 	[192, 266],
 	[210, 267],
@@ -211,12 +230,28 @@ var points = [
 	[227, 272],
 	[217, 272],
 	[187, 271],
-	[177, 270]
+	[177, 270],
+	[182, 267],
 ];
 
 var scale = 1.0;
 
 var len = points.length;
+
+var minx = points[0][0];
+var miny = points[0][1];
+var maxx = points[0][0];
+var maxy = points[0][1];
+
+for (var i = 0; i < len; i++) {
+	if (minx > points[i][0] && points[i][0] >= 0) minx = points[i][0];
+	if (maxx < points[i][0]) maxx = points[i][0];
+	if (miny > points[i][1] && points[i][1] >= 0) miny = points[i][1];
+	if (maxy < points[i][1]) maxy = points[i][1];
+}
+
+console.log('min', [minx, miny]);
+console.log('max', [maxx, maxy]);
 
 var i = 0;	
 move();
@@ -233,8 +268,8 @@ function move() {
 		return;
 	}
 	
-	var shift_x = -40;
-	var shift_y = 10;
+	var shift_x = -minx;
+	var shift_y = -miny;
 	var cur_point_x = points[i][0] + shift_x;
 	var cur_point_y = points[i][1] + shift_y;
 	var next_point_x = points[(i+1)%len][0] + shift_x;

@@ -217,36 +217,51 @@ var points = [
 var scale = 1.0;
 
 var len = points.length;
-for (var i = 0; i < len; i++) {
-	var g = svg.append("g")
-				.attr("transform", function(d, i) {
-					return "translate(0,0)";
-				});
 
-/*
-	g.append('circle')
-		.attr('cx', points[i][0] * scale)
-		.attr('cy', points[i][1] * scale)
-		.attr('r', 0.5)
-		.attr('fill', 'black')
-		.attr('stroke', 'black')
-		.attr('stroke-width', 0.1)
-*/
-}
+var i = 0;	
+move();
 
-for (var i = 0; i < len-1; i++) {
-	if (points[i][0] < 0) continue;
-	if (points[(i+1)%len][0] < 0) continue;
+function move() {
+	if (i >= len-1) {
+		console.log('end of drawing');
+		return;
+	}
 
-	svg.append('line')
+	if (points[i][0] < 0 || points[(i+1)%len][0] < 0) {
+		i++;
+		move();
+		return;
+	}
+	
+	var shift_x = -45;
+	var shift_y = 10;
+	var cur_point_x = points[i][0] + shift_x;
+	var cur_point_y = points[i][1] + shift_y;
+	var next_point_x = points[(i+1)%len][0] + shift_x;
+	var next_point_y = points[(i+1)%len][1] + shift_y;
+		
+	var line = svg.append('line')
 		.attr('class', function(d) {
 			return 'solid';
 		})
-		.attr('x1', points[i][0] * scale)
-		.attr('y1', points[i][1] * scale)
-		.attr('x2', points[(i+1)%len][0] * scale)
-		.attr('y2', points[(i+1)%len][1] * scale)
 		.attr('stroke', 'black')
+		.attr('x1', cur_point_x * scale)
+		.attr('y1', cur_point_y * scale)
+		.attr('x2', cur_point_x * scale)
+		.attr('y2', cur_point_y * scale);
+
+	
+	line.attr('x1', cur_point_x * scale)
+		.attr('y1', cur_point_y * scale)
+		.transition()
+		.duration(10)
+		.attr('x2', next_point_x * scale)
+		.attr('y2', next_point_y * scale)
+		.transition()
+		.duration(10)
+		.on('start', move);
+
+	i++;
 }
 
 </script>

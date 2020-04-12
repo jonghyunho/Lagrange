@@ -8,7 +8,7 @@ layout: page
 <div id='blank' style='height:10px;'></div>
 
 <div id='container'>
-<svg style='width:347px;height:350px;border:1px'>
+<svg style='width:347px;height:350px;letter-spacing:10px'>
 	<g></g>
 </svg>
 </div>
@@ -306,5 +306,5 @@ Jonghyun Ho
 
 Software Engineer
 
-Interested in Graphics, Cloud, AI, Data Analysis
+Interested in Graphics, Robot, Cloud Computing, Data Analysis, AI, Software Architecture, Quant, ...
 

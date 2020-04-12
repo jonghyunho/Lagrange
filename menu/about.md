@@ -8,7 +8,7 @@ layout: page
 <div id='blank' style='height:10px;'></div>
 
 <div id='container'>
-<svg style='width:347px;height:350px;letter-spacing:10px'>
+<svg style='x:20px;width:347px;height:350px'>
 	<g></g>
 </svg>
 </div>

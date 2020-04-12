@@ -301,4 +301,10 @@ function move() {
 
 </script>
 
-I'm Jonghyun.
+### 호 종 현
+Jonghyun Ho
+
+Software Engineer
+
+Interested in Graphics, Cloud, AI, Data Analysis
+

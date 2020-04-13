@@ -5,10 +5,8 @@ layout: page
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src='https://d3js.org/d3.v5.min.js'></script>
 
-<div id='blank' style='height:10px;'></div>
-
 <div id='container'>
-<svg style='x:20px;width:347px;height:350px'>
+<svg style='x:200px;width:300px;height:360px'>
 	<g></g>
 </svg>
 </div>
@@ -268,8 +266,8 @@ function move() {
 		return;
 	}
 	
-	var shift_x = -minx;
-	var shift_y = -miny;
+	var shift_x = -minx+30;
+	var shift_y = -miny+5;
 	var cur_point_x = points[i][0] + shift_x;
 	var cur_point_y = points[i][1] + shift_y;
 	var next_point_x = points[(i+1)%len][0] + shift_x;

@@ -301,8 +301,7 @@ function move() {
 
 </script>
 
-### 호 종 현
-Jonghyun Ho
+### 호 종 현 (Jonghyun Ho)
 
 Software Engineer
 

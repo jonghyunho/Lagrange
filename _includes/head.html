@@ -38,4 +38,8 @@
   <script>
   document.cookie = "SameSite=None";
   </script>
+
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
 </head>

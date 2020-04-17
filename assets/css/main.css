@@ -305,7 +305,7 @@ hr {
 
 code,
 pre {
-  font-family: "Roboto Slab", "Source Code Pro", monospace;
+  font-family: "Roboto Slab", "Source Code Pro", "Noto Serif KR";
 }
 code {
   padding: .25em .25em;
@@ -330,7 +330,7 @@ pre {
 pre code {
   padding: 0;
   font-size: 14px;
-  font-family: "Roboto Slab", "Source Code Pro", monospace;
+  font-family: "Roboto Slab", "Source Code Pro", "Noto Serif KR";
   color: inherit;
   background-color: transparent;
 }

@@ -4,7 +4,7 @@ title: "How to get stock data using Yahoo Finance Python API"
 author: "Jonghyun Ho"
 categories: Data Crawling
 tags: [Stock, Crawling, Python]
-image: stock-chart.jpg
+image: posts/apple-stock-price.png
 ---
 
 ## yfinance 설치

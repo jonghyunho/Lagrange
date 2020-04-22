@@ -170,17 +170,17 @@ cerebro.plot()  # and plot it with a single command
 Traceback (most recent call last):
   File "sma.py", line 64, in <module>
     cerebro.run()  # run it all
-  File "C:\Anaconda3\envs\stock_test\lib\site-packages\backtrader\cerebro.py", line 1127, in run
+  File "C:\Anaconda3\envs\stock\lib\site-packages\backtrader\cerebro.py", line 1127, in run
     runstrat = self.runstrategies(iterstrat)
-  File "C:\Anaconda3\envs\stock_test\lib\site-packages\backtrader\cerebro.py", line 1210, in runstrategies
+  File "C:\Anaconda3\envs\stock\lib\site-packages\backtrader\cerebro.py", line 1210, in runstrategies
     data._start()
-  File "C:\Anaconda3\envs\stock_test\lib\site-packages\backtrader\feed.py", line 203, in _start
+  File "C:\Anaconda3\envs\stock\lib\site-packages\backtrader\feed.py", line 203, in _start
     self.start()
-  File "C:\Anaconda3\envs\stock_test\lib\site-packages\backtrader\feeds\yahoo.py", line 352, in start
+  File "C:\Anaconda3\envs\stock\lib\site-packages\backtrader\feeds\yahoo.py", line 352, in start
     super(YahooFinanceData, self).start()
-  File "C:\Anaconda3\envs\stock_test\lib\site-packages\backtrader\feeds\yahoo.py", line 94, in start
+  File "C:\Anaconda3\envs\stock\lib\site-packages\backtrader\feeds\yahoo.py", line 94, in start
     super(YahooFinanceCSVData, self).start()
-  File "C:\Anaconda3\envs\stock_test\lib\site-packages\backtrader\feed.py", line 674, in start
+  File "C:\Anaconda3\envs\stock\lib\site-packages\backtrader\feed.py", line 674, in start
     self.f = io.open(self.p.dataname, 'r')
 FileNotFoundError: [Errno 2] No such file or directory: '005930.KS'
 ```

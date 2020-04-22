@@ -11,7 +11,7 @@ image: posts/20200423/backtrader_sma_simulation.png
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
-트레이딩을 할 때 투자 전략을 정하고 계획한 전략이 효과적으로 작 동작하는지에 대해 검증하거나, 얼마나 수익률이 발생하는지 확인할 수 있다면 유용할 것이다.
+트레이딩을 할 때 투자 전략을 정하고 계획한 전략이 효과적으로 잘 동작하는지에 대해 검증하거나, 얼마나 수익률이 발생하는지 확인할 수 있다면 유용할 것이다.
 
 `Backtrader` 를 이용하여 전략을 시뮬레이션 해보자.
 

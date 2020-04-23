@@ -20,7 +20,7 @@ image: posts/20200423/backtrader_sma_simulation.png
 
 [Backtrader](https://www.backtrader.com/) 는 `Python` 언어 기반의 트레이딩 백테스트 기능을 제공한다.
 
-[Zipline](https://www.zipline.io/index.html) 이라는 백테스트 툴도 존재하지만, 사용 가능한 `Python` 언어의 버전이 최신 버전을 지원하지 않아 `Backtrader` 를 사용하는 것이 적합할 것 같다.
+[Zipline](https://www.zipline.io/index.html) 이라는 백테스트 툴도 존재하지만, 최신 버전의 `Python` 언어를 지원하지 않아 `Backtrader` 를 사용하는 것이 적합할 것 같다.
 
 참고 : [Backtrader](https://www.backtrader.com/)
 

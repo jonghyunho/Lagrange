@@ -150,4 +150,8 @@ plt.show()
 
 ![correlation-housing-and-kospi](/assets/img/posts/20200502/correlation-housing-and-kospi.png)
 
+2015년 이후의 데이터로 비교한 결과는 다음과 같다.
+
+![correlation-housing-and-kospi](/assets/img/posts/20200502/correlation-housing-and-kospi_5y.png)
+
 첫 번째 그래프에서 긴 시간을 놓고 보면 두 지수가 밀접한 관계를 가지는 반면, 두번째 `correlation` 그래프에서는 밀접한 관계를 가질 때도 있고 역관계를 가질 때도 있는 시기를 반복하며 시간의 흐름에 따라 관계성이 달라지는 것을 확인할 수 있었다.

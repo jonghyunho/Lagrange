@@ -4,7 +4,7 @@ title: "서울 부동산과 KOSPI 지수의 관계"
 author: "Jonghyun Ho"
 categories: Data Analysis
 tags: [Crawling, Python, Pandas, DataFrame, KOSPI, 부동산, 아파트, 매매가격지수]
-image: posts/20200502/correlation-housing-and-kospi.png
+image: posts/20200502/comparison-housing-and-kospi.png
 ---
 
 보통 부동산의 가격이 오르면 주식의 가격이 내리고, 부동산의 가격이 내리면 주식의 가격이 오른다는 이야기를 듣곤 한다.
@@ -152,6 +152,41 @@ plt.show()
 
 2015년 이후의 데이터로 비교한 결과는 다음과 같다.
 
-![correlation-housing-and-kospi](/assets/img/posts/20200502/correlation-housing-and-kospi_5y.png)
+![correlation-housing-and-kospi-5y](/assets/img/posts/20200502/correlation-housing-and-kospi_5y.png)
 
 첫 번째 그래프에서 긴 시간을 놓고 보면 두 지수가 밀접한 관계를 가지는 반면, 두번째 `correlation` 그래프에서는 밀접한 관계를 가질 때도 있고 역관계를 가질 때도 있는 시기를 반복하며 시간의 흐름에 따라 관계성이 달라지는 것을 확인할 수 있었다.
+
+
+## 주식과 부동산 어느 것이 더 투자에 유리한가?
+
+긴 시간 동안 두 지수가 0.9 이상의 상관 관계를 갖는다는 것은 결국 물가 상승률 만큼 혹은 그 이상으로 동일하게 상승하고 있다는 것을 의미하고, 구간별로 상관 관계가 변화한다는 것은 둘 중 하나의 지수가 상대적으로 더 비싸고, 싸고를 반복하며 주기를 이룬다는 의미가 될 수도 있을 것 같다.
+
+그래서 정규화된 두 지수의 차를 계산하여 그래프로 시각화하여 확인하였다.
+
+`코스피 지수`에서 `서울 부동산` 지수의 차를 계산하였으므로 양수일 경우 `서울 부동산`이 가격적으로 더 저렴하여 투자에 더 용이하고, 반대로 음수일 경우 `코스피 지수`가 더 투자에 유리하다고 볼 수 있을 것 같다.
+
+``` python
+ax1 = plt.subplot(211)
+df.plot(ax=ax1, grid=True)
+
+ax2 = plt.subplot(212)
+df_diff = df['kospi'] - df['housing']
+ax2.plot(df_diff.index, df_diff.values, '-k', label='comparison')
+ax2.fill_between(df_diff.index, df_diff.values, 0.0, where=df_diff.values > 0.0, facecolor='b', alpha=0.1)
+ax2.fill_between(df_diff.index, df_diff.values, 0.0, where=df_diff.values < 0.0, facecolor='r', alpha=0.1)
+ax2.legend()
+ax2.grid()
+
+plt.show()
+```
+
+![comparison-housing-and-kospi](/assets/img/posts/20200502/comparison-housing-and-kospi.png)
+
+두 번째 그래프에서 파란색으로 칠해진 구간이 `부동산`이 유리한 구간, 빨간색으로 칠해진 구간이 `주식`이 유리한 구간으로 해석해 볼 수 있을 것 같다.
+
+실제로 2009년 빨간색으로 칠해진 구간에는 `리먼 브러더스 글로벌 금융 위기`로 인해 주가가 폭락하여 `주식`이 유리한 구간이 있었고, 2014년 이후 파란색으로 칠해진 구간에는 부동산 가격이 급등했던 시기로 `부동산`이 유리한 구간이었다고 볼 수 있다.
+
+최근에는 코로나 바이러스로 인해 주가가 폭락하여 2009년 `리먼 브러더스 글로벌 금융 위기`때 만큼 하락하여 `주식`에 유리한 구간이 되어 있다.
+
+향후 이 그래프의 방향성에 대해 주시해보는 것도 흐름을 예측하는 데 도움이 될 것 같다.
+

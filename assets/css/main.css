@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/gh/hgyoseo/ridibatang@master/font.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Noto+Serif+KR:400,700');
 
@@ -26,7 +27,7 @@
 */
 
 body {
-  font-family: "Roboto Slab", "Noto Serif KR", serif;
+  font-family: RIDIBatang, "Roboto Slab", "Noto Serif KR", serif;
   font-size: 16px;
   color: #515151;
   line-height: 1.75rem;
@@ -308,10 +309,10 @@ hr {
 
 code,
 pre {
-  font-family: "Source Code Pro", "Roboto Slab", "Noto Serif KR";
+  font-family: "Source Code Pro", RIDIBatang, "Roboto Slab", "Noto Serif KR";
 }
 code {
-  padding: 0em 0em;
+  padding: 0.2em 0.1em;
   background-color: #f0f0f0;
   border-radius: 3px;
 }
@@ -332,7 +333,7 @@ pre {
 pre code {
   padding: 0;
   font-size: 14px;
-  font-family: "Source Code Pro", "Roboto Slab", "Noto Serif KR";
+  font-family: "Source Code Pro", RIDIBatang, "Roboto Slab", "Noto Serif KR";
   color: inherit;
   background-color: transparent;
 }
